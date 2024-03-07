@@ -7,13 +7,14 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-display: flex;
-justify-content: center;
-align-items: center;
-        background: linear-gradient(red,orange,yellow,green,brown,indigo,violet,red);
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(red, orange, yellow, green, brown, indigo, violet, red);
     }
-    .center{
+
+    .center {
         /* border: solid; */
         /* editablecontent:'true'; */
         /* border: solid; */
@@ -22,25 +23,27 @@ align-items: center;
         width: 1000px;
         justify-content: center;
         align-items: center;
-        border: solid;
+        /* border: solid; */
         /* background-color: red; */
         /* background-image: url('https://th.bing.com/th/id/R.ae87891b3dde7b28712b75d14342f1a5?rik=2ZT%2baXLkZYcxWg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fnature-wallpaper-27.jpg&ehk=jIVFSOxLN%2fQKs4hEfZHNWAeXoeXkeEXooP%2fTy9Vwkek%3d&risl=&pid=ImgRaw&r=0'); */
         /* background-color: palevioletred; */
     }
+
     .container {
         display: flex;
         /* justify-self: center; */
         /* align-items: center; */
         width: 300px;
         height: 300px;
-        border-radius:20%;
-        background: conic-gradient(red,orange,yellow,green,blue,indigo,violet,red);
+        border-radius: 20%;
+        background: conic-gradient(red, orange, yellow, green, blue, indigo, violet, red);
         grid-row: 1/2;
         grid-column: 1/2;
         /* background-color: greenyellow; */
         animation: newton 0.15s linear infinite;
     }
-    .box{
+
+    .box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,7 +60,8 @@ align-items: center;
         border-radius: 50%;
         /* background: conic-gradient(red,orange,yellow,green,blue,indigo,violet,red); */
     }
-    .box1{
+
+    .box1 {
         width: 300px;
         height: 300px;
         /* animation: newton 4s linear infinite; */
@@ -73,19 +77,22 @@ align-items: center;
         margin: 50px;
         border-radius: 50%;
         opacity: 0;
-        background: conic-gradient(orange,white,blue,green,orange);
+        background: conic-gradient(orange, white, blue, green, orange);
 
     }
-    img{
+
+    img {
         width: 450px;
         height: 450px;
 
-border-radius: 50%;
+        border-radius: 50%;
     }
-    .section{
+
+    .section {
         display: grid;
         /* border: solid; */
     }
+
     /* .box{
         width: 10vw;
         height: 10vh;
@@ -96,22 +103,26 @@ border-radius: 50%;
         transform: translateX(10vw) translateY(10vh);
         
     } */
-    @keyframes newton{
-        100%{
+    @keyframes newton {
+        100% {
             rotate: 360deg;
         }
     }
 </style>
 
 <body>
-    <div class="center"><div class="section"><div class="container"></div>
-    <div class="box"></div>
-<div class="box1"></div></div></div>
-    
-    
-        <!-- <div class="box translate"></div> -->
-    
-    
+    <div class="center">
+        <div class="section">
+            <div class="container"></div>
+            <div class="box"></div>
+            <div class="box1"></div>
+        </div>
+    </div>
+
+
+    <!-- <div class="box translate"></div> -->
+
+
 </body>
 
 </html>
