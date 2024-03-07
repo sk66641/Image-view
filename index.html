@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,222 +9,81 @@
     * {
         margin: 0;
         padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
-    body {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    nav ul {
-        /* border: solid; */
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    nav ul li {
-        cursor: pointer;
-        display: flex;
-        gap: 5px;
-
-    }
-
-    nav ul li:hover {
-        opacity: 0.7;
-    }
-
-
-
-    .img1 {
-        /* border: solid; */
-        width: 600px;
-    }
-
-    .img1 img {
-        width: 173.72px;
-        height: 55.67px;
-    }
-
-    .img2:hover {
-        opacity: 1;
-    }
-
-
-    .heading {
-        /* border: solid; */
+    body{
+        border: solid;
+        /* background-color: grey; */
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 25px;
-        margin-top: 90px;
-        flex-wrap: wrap;
-        /* margin: 0; */
-
+        width: 100vw;
+        height: 100vh;
     }
+    .container{
 
-    .heading p {
-        /* border: solid; */
-        text-align: center;
-        font-size: 50px;
+        background: conic-gradient(orange,white,blue,green,orange);
+
+        background-color: white;
+        width: 400px;
+        height: 500px;
+
+        /* position: absolute; */
     }
-
-    .img3 {
-        cursor: pointer;
-    }
-
-    .content {
-
+    .box{
         display: flex;
-        justify-content: center;
-        margin-top: 45px;
-    }
-
-    .content p {
-        /* border: solid; */
-        width: 960px;
-        font-size: 25px;
-        text-align: center;
-    }
-
-
-    .button {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    button {
-        cursor: pointer;
-        background-color: #00b6d1;
-        padding: 15px;
-        color: white;
-        font-size: 14px;
-        border-radius: 5px;
-        border: hidden;
-        font-family: sans-serif;
-    }
-
-    button:hover {
-        background-color: #04a6bf;
-        /* opacity: 0.7; */
-    }
-
-    .img4 img {
-        width: 55.17px;
-        height: 55.17px;
-    }
-
-    .mid {
-        /* border: solid; */
-        margin-top: 80px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .cover {
-        width: 50vw;
-        /* border: solid; */
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 20px;
-        flex-wrap: wrap;
-        /* padding-right: 450px; */
-    }
-
-    .cover .para {
-        display: flex;
+        justify-content: right;
         align-items: flex-end;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .para p:nth-child(1) {
+        
         /* border: solid; */
-        font-size: 24px;
-    }
+        height: 80px;
+        margin: 10px;
+        box-shadow: 0px 0px 10px 10px #8f8f8f;
 
-    .para p:nth-child(2) {
-        /* border: solid; */
-        font-size: 14px;
-        padding-bottom: 4px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 10fr 10fr 10fr 10fr ; */
+        margin: 0px 10px;
+        gap: 5px;
+        
+    }
+    .button1{
+        border: solid;
+    }
+    button{
+        
+        /* border:solid red; */
+        height: 93px;
+        cursor: pointer;
+        /* box-shadow: 19px 20px 15px 5px #8f8f8f; */
+        box-shadow: 0px 0px 10px 10px #8f8f8f;
+
+        /* border: none; */
     }
 </style>
-<nav>
-    <div class="img1"><a href="https://www.ultraedit.com/"> <img width="180"
-                src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="image"></a>
-
-    </div>
-    <ul>
-        <li><span>Products</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
-                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg></li>
-        <li><span>Pricing</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
-                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg></li>
-        <li><span>Resources</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
-                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg></li>
-        <li><span>About us</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
-                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg></li>
-        <li><span>Security and compliance</span></li>
-        <li class="img2"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/" target="_blank">
-                <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="image"></a></li>
-    </ul>
-</nav>
-<div class="heading">
-    <p>Download <b>UltraEdit</b> for Windows</p>
-    <div class="img3"><a href="https://www.g2.com/products/ultraedit/reviews/" target="_blank"><img
-                src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="image"></a>
-
-    </div>
-</div>
-<div class="content">
-    <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
-        editor.</p>
-</div>
-<div class="button"><a href="https://www.ultraedit.com/downloads/uex-thank-you/" target="_blank">
-        <button>
-            <b>DOWNLOAD MAC OR LINUX VERSION</b>
-        </button>
-    </a>
-</div>
-<div class="mid">
-    <div class="cover">
-        <div class="img4"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png"
-                alt="image"></div>
-        <div class="para">
-            <p>Download UltraEdit </p>
-            <p>v2023.2(released 2023/12/15) | Hotfix</p>
+<body>
+    <div class="container">
+        <div contenteditable="true" class="box"></div>
+        <div class="buttons">
+           <button class="button">9</button>
+           <button class="button">8</button>
+           <button class="button">7</button>
+           <button class="button" style="background-color: rgb(67, 64, 64); color: white;">+</button>
+           <button class="button">6</button>
+           <button class="button">5</button>
+           <button class="button">4</button>
+           <button class="button" style="background-color: rgb(67, 64, 64); color: white;">-</button>
+           <button class="button">3</button>
+           <button class="button">2</button>
+           <button class="button">1</button>
+           <button class="button" style="background-color: rgb(67, 64, 64); color: white;">*</button>
+           <button class="button" style="background-color: rgb(209, 52, 52); color: whte;">C</button>
+           <button class="button">0</button>
+           <button class="button" style="background-color: rgb(67, 64, 64); color: white;">=</button>
+           <button class="button" style="background-color: rgb(67, 64, 64); color: white;">/</button>
+         
         </div>
     </div>
-</div>
-
 </body>
-
 </html>
