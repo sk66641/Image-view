@@ -4,9 +4,9 @@ if (document.body.clientWidth <= 200) {
 
 window.onload = () => {
     alert("1:) Double click on the image/background image to change it.\n2:) Double click on the colored circle part to change it's speed.")
+    // alert("Image view (𝘸𝘪𝘵𝘩 💖 𝘣𝘺 '𝘬𝘶𝘮𝘢𝘳 𝘴𝘢𝘯𝘶')");
 }
 
-// alert("Image view (𝘸𝘪𝘵𝘩 💖 𝘣𝘺 '𝘬𝘶𝘮𝘢𝘳 𝘴𝘢𝘯𝘶')");
 
 document.querySelector(".box").addEventListener("dblclick", (event_1) => {
     event_1.stopPropagation();
