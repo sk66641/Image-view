@@ -112,8 +112,12 @@
     </div>
 
     <script>
-        window.onload = () => {
 
+        if (document.body.clientWidth <= 200) {
+            alert("Please use more wider screen for better view.")
+        }
+
+        window.onload = () => {
             alert("1:) Double click on the image/background image to change it.\n2:) Double click on the colored circle part to change it's speed.")
         }
 
