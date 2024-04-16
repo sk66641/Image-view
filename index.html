@@ -67,6 +67,40 @@
             rotate: 360deg;
         }
     }
+
+    @media only screen and (max-width: 400px) {
+        .container {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box {
+            margin: 18.75px;
+        }
+
+        img {
+            width: 262.5px;
+            height: 262.5px;
+        }
+
+    }
+
+    @media only screen and (max-width: 300px) {
+        .container {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box {
+            margin: 12.5px;
+        }
+
+        img {
+            width: 175px;
+            height: 175px;
+        }
+
+    }
 </style>
 
 <body>
@@ -78,13 +112,9 @@
     </div>
 
     <script>
+        window.onload = () => {
 
-        setTimeout(() => {
             alert("1:) Double click on the image/background image to change it.\n2:) Double click on the colored circle part to change it's speed.")
-        }, 300);
-
-        if (document.body.clientWidth <= 400) {
-            alert("Please use more wider screen for better view, we will fix this soon. Sorry, for the inconvenience!")
         }
 
         document.querySelector(".box").addEventListener("dblclick", (event_1) => {
